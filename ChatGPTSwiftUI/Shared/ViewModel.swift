@@ -320,7 +320,7 @@ class ViewModel: ObservableObject {
         let base64String = imageData.base64EncodedString()
         
         // API 키 및 URL 설정
-        let apiKey = "20c6065097579ffc51c1430c55ec0c56"
+        let apiKey = API_KEY
         // HTTP 요청 생성
            guard let url = URL(string: "https://api.imgbb.com/1/upload") else {
                throw URLError(.badURL)
