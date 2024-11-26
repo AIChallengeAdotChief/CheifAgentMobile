@@ -15,7 +15,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct XCAChatGPTApp: App {
     
-    @StateObject var vm = ViewModel(api: ChatGPTAPI(apiKey: "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"))
+    @StateObject var vm = ViewModel(api: ChatGPTAPI(apiKey: "api_key"))
     @State var isShowingTokenizer = false
     @State var llmConfig: LLMConfig?
     // register app delegate for Firebase setup
